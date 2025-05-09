@@ -11,7 +11,7 @@ public class SkyrimVR : SimpleTCPPack<SimpleTCPServerConnector>
 
     public override ushort Port => 59420;
 
-    public override ISimpleTCPPack.MessageFormat MessageFormat => ISimpleTCPPack.MessageFormat.CrowdControlLegacy;
+    public override ISimpleTCPPack.MessageFormatType MessageFormat => ISimpleTCPPack.MessageFormatType.CrowdControlLegacy;
 
     public SkyrimVR(UserRecord player, Func<CrowdControlBlock, bool> responseHandler, Action<object> statusUpdateHandler) : base(player, responseHandler, statusUpdateHandler)
     {
