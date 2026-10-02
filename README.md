@@ -1,5 +1,12 @@
 # The Elder Scrolls V: Skyrim VR
 
+## Pack metadata
+
+- **Game:** The Elder Scrolls V: Skyrim VR
+- **Crowd Control game ID:** `SkyrimVR`
+- **Connector:** `SimpleTCPServerConnector`
+- **Port:** `59420`
+
 This folder contains the C# Crowd Control pack definition and VR-specific plugin/source components for **Skyrim VR**.
 
 ## Connector and setup
