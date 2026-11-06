@@ -29,10 +29,10 @@ public class SkyrimVR : SimpleTCPPack<SimpleTCPServerConnector>
 
     public override Game Game { get; } = new("The Elder Scrolls V: Skyrim VR", "SkyrimVR", "PC", ConnectorType.SimpleTCPServerConnector);
 
-    public override EffectList Effects
+    public override EffectList Effects { get; } = CreateEffects();
+
+    private static EffectList CreateEffects()
     {
-        get
-        {
             List<Effect> effects = new List<Effect>
             {
                 #region Give Item (folder)
@@ -251,6 +251,5 @@ public class SkyrimVR : SimpleTCPPack<SimpleTCPServerConnector>
             };
             #endregion
             return effects;
-        }
     }
 }
